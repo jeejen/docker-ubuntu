@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 ENV LANG=zh_CN.UTF-8 LANGUAGE=zh_CN.UTF-8 TZ=Asia/Shanghai
 
-COPY sources.list /etc/apt/sources.list
+#COPY sources.list /etc/apt/sources.list
 
 RUN apt-get update && \
     apt-get -y install curl tzdata unzip && \
